@@ -15,10 +15,21 @@ export class CategoriaComponent implements OnInit {
   private categoriaService = inject(CategoriaService)
 
   categorias: Categoria[]=[]
+    visible: boolean=false
     ngOnInit(): void {
         this.getCategorias()
     }
   getCategorias(){
-    
-  }
+    this.categoriaService.funListar().subscribe(
+      (res:any)=>{
+        this.categorias=res;
+      },
+      (error:any)=>{
+        console.log(error);
+      }
+    )
+ }
+ mostrarDialog(){
+      this.visible=true
+}
 }
