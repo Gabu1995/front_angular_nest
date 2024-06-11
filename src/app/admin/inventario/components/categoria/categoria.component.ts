@@ -1,5 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CategoriaService } from '../../services/categoria.service';
+import { FormControl, FormGroup } from '@angular/forms';
+import { error } from 'console';
 
 interface Categoria {
   id?: number,
@@ -15,7 +17,12 @@ export class CategoriaComponent implements OnInit {
   private categoriaService = inject(CategoriaService)
 
   categorias: Categoria[]=[]
-    visible: boolean=false
+    visible: boolean=false;
+    categoriaForm= new FormGroup({
+      nombre: new FormControl(''),
+      detalle: new FormControl('')
+    });
+
     ngOnInit(): void {
         this.getCategorias()
     }
@@ -31,5 +38,16 @@ export class CategoriaComponent implements OnInit {
  }
  mostrarDialog(){
       this.visible=true
+}
+guardarCategoria(){
+  this.categoriaService.funGuardar(this.categoriaForm.value).subscribe(
+    (res:any)=>{
+      this.visible=false;
+      this.getCategorias();
+    },
+    (error:any)=>{
+      console.log(error);
+    }
+  )
 }
 }
