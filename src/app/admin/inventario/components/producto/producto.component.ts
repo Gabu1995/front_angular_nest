@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './producto.component.scss'
 })
 export class ProductoComponent {
-
+  openNew(){
+    
+  }
 }
