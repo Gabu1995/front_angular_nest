@@ -6,7 +6,32 @@ import { Component } from '@angular/core';
   styleUrl: './producto.component.scss'
 })
 export class ProductoComponent {
+  products:any []=[
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
+    
+  ];
+  cols: any []=[];
   openNew(){
     
+  }
+  editProduct(prod:any){
+
+  }
+  deleteProduct(prod: any){
+
   }
 }
