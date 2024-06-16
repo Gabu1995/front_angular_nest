@@ -9,6 +9,6 @@ import { ɵBrowserAnimationBuilder } from '@angular/animations';
 
 export const appConfig: ApplicationConfig = {
   //providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration()]
-  providers: [provideRouter(routes), provideClientHydration(), importProvidersFrom(BrowserModule), importProvidersFrom (BrowserAnimationsModule)]
+  providers: [provideRouter(routes), provideClientHydration(), importProvidersFrom(BrowserModule), importProvidersFrom (BrowserAnimationsModule), provideHttpClient(withFetch()), provideRouter(routes), provideClientHydration()]
   //validar si se debe importar provideClientHydration
 };

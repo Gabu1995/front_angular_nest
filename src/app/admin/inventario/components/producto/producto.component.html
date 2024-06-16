@@ -3,6 +3,7 @@
     <div class="col-12">
         <div class="card px-6 py-6">
 
+            
             <p-toolbar styleClass="mb-4">
                 <ng-template pTemplate="left">
                     <div class="my-2">
@@ -12,6 +13,8 @@
                     </div>
                 </ng-template>
                 <ng-template pTemplate="right">
+                    <p-dropdown [options]="categorias"  optionLabel="name" [showClear]="true" placeholder="Filtrar por categorias" />
+
                     <button pButton pRipple label="Exportar" icon="pi pi-upload" class="p-button-help"(click)="dt.exportCSV()"></button>
                 </ng-template>
             </p-toolbar>
@@ -68,8 +71,9 @@
                         {{product.stock}}
                     </td>
                     <td style="width:14%; min-width: 10rem;"><span class="p-column-title">Acciones</span>
+                        <!--
                         <span
-                            [class]="'product-badge status-' + (product.estado ? product.estado.toLowerCase() : '')">{{product.estado}}</span>
+                            [class]="'product-badge status-' + (product.estado ? product.estado.toLowerCase() : '')">{{product.estado}}</span>-->
                     </td>
                     <td>
                         <div class="flex">
