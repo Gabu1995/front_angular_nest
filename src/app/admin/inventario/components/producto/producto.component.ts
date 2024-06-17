@@ -18,24 +18,7 @@ export class ProductoComponent {
     { name: 'Hogar', code: 'Hgr' }
 ];
 
-  products:any []=[
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    {id:1, nombre:"Teclado",precio:394.96, categoria_id: 5 ,stock: 12, estado:"COMPLETADO"},
-    
-  ];
+  products:any []=[];
   cols: any []=[];
 
   constructor(){
